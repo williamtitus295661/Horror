@@ -1,0 +1,106 @@
+/*  JavaScript 7th Edition
+    
+
+    Filename: Horror-home.css
+*/
+
+/* apply a natural box layout model to all elements */
+body {
+   text-align: center;
+   line-height: 1;
+   width: auto;
+  
+   background-color:black;
+   background-size: 275%;
+   background-repeat: no-repeat;
+   background: linear-gradient(black,black) padding-box,
+           linear-gradient(to right, red, orange, yellow) border-box;
+   animation: flicker 1s infinite alternate;
+  
+   .container {
+     display: flex;
+   }
+   
+   img {
+     margin-top: 50px;
+  
+     flex-shrink: 1;
+     width: 50%;
+   }
+   
+   @media (max-width: 600px) {
+     img {
+       width: 100%;
+     }
+   }
+ 
+} 
+
+@keyframes flicker {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.2); }
+  100% { filter: brightness(0.8); }
+ 
+}
+
+
+
+h1 {
+  text-align: center;
+  line-height: 1;
+  width: auto;
+  text-shadow:
+  -2px -1px 0 rgb(53, 139, 0),  
+  1px -1px 0 rgb(2, 40, 25),
+  -2px  1px 0 rgb(27, 179, 42),
+  1px  1px 0 rgb(3, 61, 32);
+  margin-bottom: 25px;
+  margin-top: 45px;
+  font-family: 'Creepster', cursive;
+  font-size:30px;
+  color:yellowgreen
+  hidden;
+}
+
+
+footer {
+  font-size: 12px;
+       
+  margin-top: 50px;
+ 
+  position: bottom;
+  left: 0;
+  bottom: 0;
+ 
+
+  color: red;
+  text-align: center;
+  padding: 5px;
+     }
+
+/* page header */
+
+
+ol, ul {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Creepster', cursive;
+  font-size:medium;
+  color:red;
+  list-style-position: left;
+  list-style: inside;
+  float:top;
+   
+   
+   
+ }
+
+ li {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-right: 25px;
+ 
+  font-weight: bold;
+  font-size: small;
+  color:crimson;
+}
